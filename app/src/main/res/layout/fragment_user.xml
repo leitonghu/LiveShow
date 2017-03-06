@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xihoo_backgroud"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:background="@color/common_purple"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/comm_user_default_icon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white_color"
+            android:layout_marginTop="100dp"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:text="阿权深夜主播"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"
+            android:text="ID:"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/white_gray_color"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_more_gray"
+            android:text="编辑个人信息"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16sp"
+            android:src="@mipmap/right_icon"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/comm_divider"
+        />
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/white_gray_color"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_more_gray"
+            android:text="关于玺虎科技"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_icon"
+            android:layout_marginRight="16sp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/white_gray_color"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_more_gray"
+            android:text="退出登录"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

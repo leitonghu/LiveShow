@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/headImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/comm_user_default_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/headImage"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主播名"
+                android:textColor="@color/common_more_gray"
+                android:textSize="14sp"
+                />
+            <RelativeLayout
+                android:layout_below="@id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                >
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="火星"
+                    android:textColor="@color/common_darker_gray"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/signatrue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精彩直播，无处不在"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/common_darker_gray"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/location"
+                    />
+
+                <TextView
+                    android:id="@+id/onlineNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在线：100"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/common_darker_gray"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp">
+        <ImageView
+            android:id="@+id/room_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/comm_pictures_no"
+            />
+        <TextView
+            android:id="@+id/liveStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_darker_gray"
+            android:textSize="@dimen/sp_16"
+            android:layout_gravity="right|top"
+            android:text="直播"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            />
+    </FrameLayout>
+</LinearLayout>

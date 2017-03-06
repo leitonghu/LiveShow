@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Live365</string>
+    <color name="comm_divider">#d7d7d7</color>
+    <color name="white_color">#FFFFFF</color>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_appload">ApploadActivity</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="net_err">网络异常请，请重试</string>
+</resources>
